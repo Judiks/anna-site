@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url(./assets/fonts/Oswald-Bold.ttf) format("truetype");
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    margin: 50px 100px 0px 100px;
+}
+
+section {
+    margin: 00px 100px 0px 100px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+.navbar-title {
+    display: flex;
+    background-color: #ff8800af;
+    font-family: 'Oswald-Bold';
+    justify-content: space-around;
+}
+
+.navbar {
+    font-family: 'Oswald-Bold';
+    width: auto;
+    background: #ffa640b6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    padding-right: 10px;
+    align-self: center;
+}
+
+.navbar-buttons {
+    padding: 5px 0px;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald-Bold';
+    font-size: large;
+}
+
+.nav-item:not(:first-child) {
+    border-left: 1px solid white;
+}
+
+.nav-item.active a {
+    color: white !important;
+}
+
+span {
+    cursor: pointer;
+}
+
+
+/* galerry */
+
+.cssSlider {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.cssSlider .slides {
+    overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 70vmin;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cssSlider .slides>li {
+    width: 100%;
+    text-align: center;
+    height: 70vmin;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+
+.cssSlider .thumbnails {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cssSlider .thumbnails>li {
+    float: left;
+    width: 20%;
+}
+
+.cssSlider .thumbnails>li>a {
+    display: block;
+}
+
+.cssSlider .thumbnails>li>a>img {
+    width: 100%;
+    height: auto;
+}
+
+.cssSlider .slides li:target {
+    z-index: 3;
+    -webkit-animation: slide 1s 1;
+}
+
+.cssSlider .slides li:not(:target) {
+    visibility: hidden;
+    transition: visibility 1s, opacity 0.5s linear;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes hidden {
+    0% {
+        z-index: 2;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        z-index: 2;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes hidden {
+    0% {
+        z-index: 2;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        z-index: 2;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+
+/* gallery */
+
+.shema1 {
+    width: auto;
+    height: 1000px;
+}
+
+.side-menu {
+    width: 300px;
+    height: auto;
+}
+
+.center-menu {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.map {
+    margin-block-start: -55px;
+    z-index: -1;
+    position: absolute;
+}
